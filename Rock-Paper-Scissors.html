@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock-Paper-Scissors</title>
+  </head>
+  <body>
+    <h1>Rock-Paper-Scissors</h1>
+    <p>Choose rock, paper or scissors.</p>
+    <button onclick="rock()">Rock</button
+    ><button onclick="paper()">Paper</button
+    ><button onclick="scissors()">Scissors</button>
+    <p id="resultAfterGame"></p>
+    <script>
+      function rock() {
+        let computersChoice = Math.floor(Math.random() * 3);
+        let yourChoice = 0;
+        if (yourChoice === computersChoice) {
+          let result = "Computer picked rock, you tied!";
+          return (document.getElementById("resultAfterGame").innerHTML =
+            result);
+        } else if (yourChoice === 0 && computersChoice === 1) {
+          let result = "Computer picked paper, you lose!";
+          return (document.getElementById("resultAfterGame").innerHTML =
+            result);
+        } else if (yourChoice === 0 && computersChoice === 2) {
+          let result = "Computer picked scissors, you win!";
+          return (document.getElementById("resultAfterGame").innerHTML =
+            result);
+        }
+      }
+      function paper() {
+        let computersChoice = Math.floor(Math.random() * 3);
+        let yourChoice = 1;
+        if (yourChoice === computersChoice) {
+          let result = "Computer picked paper, you tied!";
+          return (document.getElementById("resultAfterGame").innerHTML =
+            result);
+        } else if (yourChoice === 1 && computersChoice === 0) {
+          let result = "Computer picked rock, you win!";
+          return (document.getElementById("resultAfterGame").innerHTML =
+            result);
+        } else if (yourChoice === 1 && computersChoice === 2) {
+          let result = "Computer picked scissors, you lose!";
+          return (document.getElementById("resultAfterGame").innerHTML =
+            result);
+        }
+      }
+      function scissors() {
+        let computersChoice = Math.floor(Math.random() * 3);
+        let yourChoice = 2;
+        if (yourChoice === computersChoice) {
+          let result = "Computer picked scissors, you tied!";
+          return (document.getElementById("resultAfterGame").innerHTML =
+            result);
+        } else if (yourChoice === 2 && computersChoice === 0) {
+          let result = "Computer picked rock, you lose!";
+          return (document.getElementById("resultAfterGame").innerHTML =
+            result);
+        } else if (yourChoice === 2 && computersChoice === 1) {
+          let result = "Computer picked paper, you win!";
+          return (document.getElementById("resultAfterGame").innerHTML =
+            result);
+        }
+      }
+    </script>
+  </body>
+</html>
