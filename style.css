@@ -1,0 +1,24 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-size: 6rem;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'DM Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.button-container {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+button {
+    padding: 6rem 3rem;
+}
